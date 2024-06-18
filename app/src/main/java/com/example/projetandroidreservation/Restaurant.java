@@ -11,6 +11,11 @@ public class Restaurant {
         // Required empty constructor
     }
 
+    public Restaurant(String name, String description) {
+        this.name = name;
+        this.description = description;
+    }
+
     public String getId() {
         return id;
     }
