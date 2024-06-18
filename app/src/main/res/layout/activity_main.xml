@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/restaurant_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button_view_reservations"/>
+
+    <Button
+        android:id="@+id/button_view_reservations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Reservations"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        android:id="@+id/button_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="94dp"
+        android:layout_marginBottom="21dp"
+        android:layout_toRightOf="@id/button_view_reservations"
+        android:text="Logout"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
